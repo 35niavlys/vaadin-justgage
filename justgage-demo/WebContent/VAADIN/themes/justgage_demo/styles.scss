@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "justgage_demo.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in justgage_demo.scss */
+.justgage_demo {
+  @include addons;
+  @include justgage_demo;
+}

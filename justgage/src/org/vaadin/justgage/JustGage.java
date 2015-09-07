@@ -22,7 +22,6 @@ public class JustGage extends AbstractJavaScriptComponent {
 		setStyleName("justgage");
 		if (conf.id == null)
 			conf.id = getId();
-		System.out.println(conf);
 		callFunction("init", conf.toString());
 	}
 

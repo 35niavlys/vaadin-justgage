@@ -7,7 +7,7 @@ public class JustGageConfiguration implements Serializable {
 
 	private static final long serialVersionUID = -2270973429950733655L;
 
-	private final char DOUBLE_QUOTE = '\"';
+	private static final char DOUBLE_QUOTE = '\"';
 
 	/**
 	 * Specify a specific DOM id. An id will be generated if this property is
@@ -333,7 +333,7 @@ public class JustGageConfiguration implements Serializable {
 			sb.append('[');
 			Object[] tab = (Object[]) o;
 			for (int i = 0; i < tab.length; i++) {
-				append(tab[i], sb);
+				append(tab[i], sb).append(',');
 			}
 			sb.setLength(sb.length() - 1);
 			sb.append(']');

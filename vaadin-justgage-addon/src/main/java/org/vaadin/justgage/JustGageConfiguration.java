@@ -10,6 +10,11 @@ public class JustGageConfiguration implements Serializable {
 	 * not defined
 	 */
 	public String id;
+	
+	/**
+	 * Gauge name displayed on top of the gauge track
+	 */
+	public String title;
 
 	/**
 	 * value gauge is showing
@@ -356,9 +361,9 @@ public class JustGageConfiguration implements Serializable {
 	}
 
 	private StringBuilder append(Object o, StringBuilder sb) {
-		if (o instanceof Number)
+		if (o instanceof Number) {
 			sb.append(o);
-		else if (o instanceof Object[]) {
+		} else if (o instanceof Object[]) {
 			sb.append('[');
 			Object[] tab = (Object[]) o;
 			for (int i = 0; i < tab.length; i++) {
@@ -366,7 +371,10 @@ public class JustGageConfiguration implements Serializable {
 			}
 			sb.setLength(sb.length() - 1);
 			sb.append(']');
-		} else
+		} else if(o instanceof Boolean) {
+			sb.append(o);
+		} 
+		else
 			sb.append('"').append(o).append('"');
 		return sb;
 	}

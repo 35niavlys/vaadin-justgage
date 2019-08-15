@@ -5,7 +5,7 @@
 	<groupId>org.vaadin</groupId>
 	<artifactId>vaadin-justgage-root</artifactId>
 	<packaging>pom</packaging>
-	<version>1.1</version>
+	<version>1.0.2</version>
 	<name>JustGage Add-on Root Project</name>
 
 	<prerequisites>

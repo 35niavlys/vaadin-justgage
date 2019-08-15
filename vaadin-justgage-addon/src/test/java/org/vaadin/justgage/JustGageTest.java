@@ -17,7 +17,7 @@ public class JustGageTest {
 		conf.startAnimationType = AnimationType.ELASTIC;
 		
 		Assert.assertEquals(
-				"{\"height\":521,\"minTxt\":\"minTxt\",\"shadowOpacity\":5.0,\"levelColors\":[\"#D60000\",\"#F57A00\",\"#FADA28\",\"#52D138\"],\"startAnimationType\":\"elastic\",\"counter\":\"true\"}",
+				"{\"height\":521,\"minTxt\":\"minTxt\",\"shadowOpacity\":5.0,\"levelColors\":[\"#D60000\",\"#F57A00\",\"#FADA28\",\"#52D138\"],\"startAnimationType\":\"elastic\",\"counter\":true}",
 				conf.toString()
 		);
 	}
